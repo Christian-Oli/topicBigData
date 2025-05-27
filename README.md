@@ -1,4 +1,4 @@
-```bash
+```
 # BeeView - Aplicação de Análise Facial e Autenticação
 
 Bem-vindo ao repositório do **BeeView**, uma aplicação desktop que combina um sistema robusto de autenticação de usuários com funcionalidades de análise facial. Desenvolvido em Python utilizando a biblioteca `CustomTkinter` para uma interface gráfica moderna e responsiva.
@@ -9,10 +9,10 @@ O BeeView oferece uma experiência de usuário fluida, começando com telas de l
 
 ### Funcionalidades Principais:
 
-* **Autenticação Segura:** Login e registro de usuários com validação de entrada e feedback visual.
-* **Design Moderno:** Interface de usuário construída com `CustomTkinter`, apresentando elementos gráficos personalizados como hexágonos de fundo interativos na tela de login.
-* **Análise Facial (Módulo Principal):** Um aplicativo independente para processamento e análise de dados faciais, sugerindo o uso de algoritmos de visão computacional.
-* **Estrutura Modular:** Código bem organizado em módulos para facilitar a manutenção e escalabilidade.
+* Autenticação Segura: Login e registro de usuários com validação de entrada e feedback visual.
+* Design Moderno: Interface de usuário construída com `CustomTkinter`, apresentando elementos gráficos personalizados como hexágonos de fundo interativos na tela de login.
+* Análise Facial (Módulo Principal): Um aplicativo independente para processamento e análise de dados faciais, sugerindo o uso de algoritmos de visão computacional.
+* Estrutura Modular: Código bem organizado em módulos para facilitar a manutenção e escalabilidade.
 
 ## Estrutura de Arquivos
 
@@ -45,7 +45,6 @@ Certifique-se de ter o Python instalado (versão 3.x recomendada).
 
 Você precisará instalar as bibliotecas necessárias:
 
-```bash
 pip install customtkinter
 Passos para Executar
 Clone o Repositório (se estiver em um sistema de controle de versão) ou faça o download de todos os arquivos.
