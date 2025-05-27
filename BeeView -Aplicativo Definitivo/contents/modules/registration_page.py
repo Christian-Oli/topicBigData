@@ -23,22 +23,9 @@ class RegistrationPage(ctk.CTkFrame):
         self.grid_columnconfigure(0, weight=1)
 
         # Hexagon related attributes and calls are removed
-        # self._create_hexagon_canvas() # REMOVED
 
         self._create_content_layout() # Sets up top bar and main columns area
         self._populate_widgets()      # Fills the layout with widgets
-
-        # Hexagon related bindings and initial draw calls are removed
-        # self.master.after(150, self._draw_hexagons_on_resize) # REMOVED
-        # self.bg_canvas.bind("<Configure>", self._draw_hexagons_on_resize) # REMOVED
-
-    # --- Hexagon Drawing and Interaction Methods are REMOVED ---
-    # _create_hexagon_canvas
-    # _calculate_hexagon_vertices
-    # _draw_hexagons_on_resize
-    # _is_point_in_polygon
-    # _on_canvas_mouse_move
-    # _on_canvas_mouse_leave
 
     def _create_content_layout(self):
         # This frame sits directly on RegistrationPage and holds all visible UI content
@@ -236,6 +223,9 @@ class RegistrationPage(ctk.CTkFrame):
             return
 
         date_of_birth = f"{year}-{month.zfill(2)}-{day.zfill(2)}" 
+        # A linha abaixo chama o callback.
+        # Certifique-se de que o método MainApplication._handle_registration_attempt
+        # em face_app.py está definido para aceitar self, email, password e date_of_birth.
         success, message = self.on_register_attempt_callback(email, password, date_of_birth)
 
         if success:
@@ -272,7 +262,7 @@ if __name__ == "__main__":
     test_root.grid_columnconfigure(0, weight=1)
     test_root.grid_rowconfigure(0, weight=1)
 
-    def _mock_register_attempt(email, password, dob):
+    def _mock_register_attempt(email, password, dob): # Este mock aceita 3 argumentos
         print(f"TESTE: Registrar: Email='{email}', Senha='{len(password)} chars', DOB='{dob}'")
         if not email.endswith("@example.com"): 
             return False, "Por favor, use um email '@example.com' para teste."

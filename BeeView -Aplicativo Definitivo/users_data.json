@@ -1,5 +1,9 @@
 {
     "users": {
-        "umfigurante": "123456"
+        "umfigurante": "123456",
+        "kissme12@gmail.com": {
+            "password": "123456",
+            "dob": "1943-04-09"
+        }
     }
 }
