@@ -1,5 +1,5 @@
 ```
-# BeeView - Aplicação de Análise Facial e Autenticação
+# BeeView - Aplicação de Análise de Filmes
 
 Bem-vindo ao repositório do **BeeView**, uma aplicação desktop que combina um sistema robusto de autenticação de usuários com funcionalidades de análise facial. Desenvolvido em Python utilizando a biblioteca `CustomTkinter` para uma interface gráfica moderna e responsiva.
 
